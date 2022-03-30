@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import Link from"next/link" // SPA para cargar solo lo necesario (sin refresacar)
 
 export default function Home() {
   return (
@@ -12,12 +12,13 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          <a href="/home">ALPHA BCZ</a>
-        </h1>
+      <section className={styles.title}>   
+      <Link href="/"><h1 >ALPHA BCZ</h1></Link> 
+      </section>
+
         <section>
           {" "}
-          <a href="/gallery">GALLERY</a>
+          <Link href="/gallery"><a>GALLERY</a></Link>
         </section>
       </main>
     </div>
