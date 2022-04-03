@@ -3,6 +3,7 @@ import { Fragment, useEffect, useRef, useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/solid";
 import { LazyMotion } from "framer-motion";
 
+
 export default function Navbar() {
   const [isHover, setIsHover] = useState(false);
   return (
